@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "c5a8c0e4-fd64-4711-8143-5648c1c7ba7a",
+		"name": "Travel time service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get from Travel Time service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/?origlat=40.778239&origlon=-73.956004&destlat=40.742329&destlon=-73.980064&pickup_time=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "origlat",
+							"value": "40.778239"
+						},
+						{
+							"key": "origlon",
+							"value": "-73.956004"
+						},
+						{
+							"key": "destlat",
+							"value": "40.742329"
+						},
+						{
+							"key": "destlon",
+							"value": "-73.980064"
+						},
+						{
+							"key": "pickup_time",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

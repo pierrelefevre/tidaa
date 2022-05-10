@@ -1,0 +1,11 @@
+Berlin Madrid Rome Paris Vienna Hamburg Stockholm London
+Madrid Paris 2
+Berlin Paris 1.6
+Rome Madrid 2.5
+Rome Vienna 1.6
+Berlin Hamburg 1
+Berlin Vienna 1.3
+Hamburg Stockholm 1
+Stockholm Vienna 2.2
+London Stockholm 2.7
+Paris London 1.3

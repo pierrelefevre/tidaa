@@ -1,0 +1,31 @@
+Input:
+nodes: Collection of all nodes in the system
+availablePaths: All remaining nodes to check
+value: Weight of step between neighbors
+
+Output:
+via: Previous node traversed to arrive at current node
+cost: Cost accumulated through the travel to that point
+
+availablePaths = nodes
+for path in availablePaths
+	path.cost = Infinity
+
+start.cost = 0
+next = start
+
+while availablePaths is not empty
+	next = node in availablePath with lowest cost
+	availablePaths.remove(next)
+
+	for neighbor in next.neighbors
+		if neighbor.cost > next.cost + neighbor.value
+			neighbor.cost = next.cost + neighbor.value
+			neighbor.via = next
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+*.xml
+*.iml
+out
+.idea/*
+*/*.iml
+*/*.xml
+/*.xml
+/*.iml
+../lab1
