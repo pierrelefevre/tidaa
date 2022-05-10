@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whiteboardapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whiteboardapi
+  template:
+    metadata:
+      labels:
+        app: whiteboardapi
+    spec:
+      containers:
+        - name: whiteboardapi
+          image: whiteboardbackend
+          ports:
+            - containerPort: 9898
+              name: service-port
+          imagePullPolicy: Never

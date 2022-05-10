@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chartapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chartapi
+  template:
+    metadata:
+      labels:
+        app: chartapi
+    spec:
+      containers:
+        - name: chartapi
+          image: chartbackend
+          ports:
+            - containerPort: 8888
+              name: service-port
+          imagePullPolicy: Never

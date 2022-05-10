@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postapi
+  template:
+    metadata:
+      labels:
+        app: postapi
+    spec:
+      containers:
+        - name: postapi
+          image: postbackend
+          ports:
+            - containerPort: 8082
+              name: service-port
+          imagePullPolicy: Never

@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: chartdb-pv-claim
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chartdb-service
+spec:
+  ports:
+  - port: 27017
+  selector:
+    app: chartdb
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: chartdb
+  name: chartdb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chartdb
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: chartdb
+    spec:
+      containers:
+      - image: mongo
+        name: chartdb
+        args: ["--dbpath","/data/db"]
+        volumeMounts:
+        - name: chartdb-persistent-storage
+          mountPath: "/data/db"
+      volumes:
+      - name: chartdb-persistent-storage
+        persistentVolumeClaim:
+          claimName: chartdb-pv-claim

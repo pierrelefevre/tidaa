@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatapi
+  template:
+    metadata:
+      labels:
+        app: chatapi
+    spec:
+      containers:
+        - name: chatapi
+          image: chatbackend
+          ports:
+            - containerPort: 8083
+              name: service-port
+          imagePullPolicy: Never

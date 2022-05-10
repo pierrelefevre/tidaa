@@ -1,0 +1,43 @@
+version: '3.3'
+services:
+  userDB:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'userDB'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'user'
+
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'password'
+
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'password'
+
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3309:3306'
+
+    volumes:
+      - my-db:/var/lib/mysql
+    networks:
+      - "labb2network"
+  app:
+    container_name: userBackend
+    depends_on:
+      - userDB
+    image: userbackend
+
+    build: ./
+    ports:
+      - "8081:8080"
+    expose:
+      - "8081"
+    command: "mvn spring-boot:run -X"
+    networks:
+      - "labb2network"
+
+volumes:
+  my-db:
+networks:
+  labb2network:

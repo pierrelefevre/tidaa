@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: chatdb-pv-claim
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: chatdb-service
+spec:
+  ports:
+  - port: 3306
+  selector:
+    app: chatdb
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatdb
+spec:
+  selector:
+    matchLabels:
+      app: chatdb
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: chatdb
+    spec:
+      containers:
+      - image: mysql:5.6
+        name: chatdb
+        env:
+          # Use secret in real usage
+        - name: MYSQL_DATABASE
+          value: chatDB
+        - name: MYSQL_ROOT_PASSWORD
+          value: password
+        ports:
+        - containerPort: 3306
+          name: chatdb
+        volumeMounts:
+        - name: chatdb-persistent-storage
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: chatdb-persistent-storage
+        persistentVolumeClaim:
+          claimName: chatdb-pv-claim

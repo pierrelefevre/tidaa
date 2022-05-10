@@ -1,0 +1,188 @@
+version: '3.8'
+services:
+  # CHART
+  chartDB:
+    container_name: chartDB
+    image: mongo
+    environment:
+      - PUID=1000
+      - PGID=1000
+    ports:
+      - "27017:27017"
+    expose:
+      - "27017"
+    restart: unless-stopped
+    networks:
+      - "network"
+  chartAPI:
+    container_name: chartAPI
+    depends_on:
+      - chartDB
+      - userAPI
+    image: chartbackend
+    build: ./chartAPI/
+    ports:
+      - "8888:8888"
+    expose:
+      - "8888"
+    command: "./mvnw clean compile exec:java"
+    networks:
+      - "network"
+
+  # CHAT
+  chatDB:
+    container_name: chatDB
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'chatDB'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'user'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'password'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3307:3306'
+    volumes:
+      - chatVolume:/var/lib/mysql
+    networks:
+      - "network"
+  chatAPI:
+    container_name: chatAPI
+    depends_on:
+      - chatDB
+      - userAPI
+    image: chatbackend
+    build: ./chatAPI/
+    ports:
+      - "8083:8080"
+    expose:
+      - "8083"
+    command: "mvn spring-boot:run -X"
+    networks:
+      - "network"
+
+  # IMAGE
+  imageDB:
+    container_name: imageDB
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'imageDB'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'user'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'password'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3310:3306'
+    volumes:
+      - imageVolume:/var/lib/mysql
+    networks:
+      - "network"
+  imageAPI:
+    container_name: imageAPI
+    depends_on:
+      - imageDB
+      - userAPI
+    image: imagebackend
+    build: ./imageAPI/
+    ports:
+      - "8084:8080"
+    expose:
+      - "8084"
+    command: "mvn spring-boot:run"
+    networks:
+      - "network"
+
+  # POST
+  postDB:
+    container_name: postDB
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'postDB'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'user'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'password'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3308:3306'
+    volumes:
+      - postVolume:/var/lib/mysql
+    networks:
+      - "network"
+  postAPI:
+    container_name: postAPI
+    depends_on:
+      - postDB
+      - userAPI
+    image: postbackend
+    build: ./postAPI/
+    ports:
+      - "8082:8080"
+    expose:
+      - "8082"
+    command: "mvn spring-boot:run"
+    networks:
+      - "network"
+
+  # USER
+  userDB:
+    container_name: userDB
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'userDB'
+      # So you don't have to use root, but you can if you like
+      MYSQL_USER: 'user'
+      # You can use whatever password you like
+      MYSQL_PASSWORD: 'password'
+      # Password for root access
+      MYSQL_ROOT_PASSWORD: 'password'
+    ports:
+      # <Port exposed> : < MySQL Port running inside container>
+      - '3309:3306'
+    volumes:
+      - userVolume:/var/lib/mysql
+    networks:
+      - "network"
+  userAPI:
+    container_name: userAPI
+    depends_on:
+      - userDB
+    image: userbackend
+    build: ./userAPI/
+    ports:
+      - "8081:8080"
+    expose:
+      - "8081"
+    command: "mvn spring-boot:run -X"
+    networks:
+      - "network"
+  whiteboardAPI:
+    container_name: whiteboardAPI
+    image: whiteboardbackend
+    build: ./whiteboardAPI/
+    ports:
+      - "9898:9898"
+    expose:
+      - "9898"
+    networks:
+      - "network"
+
+volumes:
+  chatVolume: null
+  imageVolume: null
+  postVolume: null
+  userVolume: null
+networks:
+  network:
+    name: network

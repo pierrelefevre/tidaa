@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: imageapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: imageapi
+  template:
+    metadata:
+      labels:
+        app: imageapi
+    spec:
+      containers:
+        - name: imageapi
+          image: imagebackend
+          ports:
+            - containerPort: 8084
+              name: service-port
+          imagePullPolicy: Never

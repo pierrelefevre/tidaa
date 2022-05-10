@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: imagedb-pv-claim
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: imagedb-service
+spec:
+  ports:
+  - port: 3306
+  selector:
+    app: imagedb
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: imagedb
+spec:
+  selector:
+    matchLabels:
+      app: imagedb
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: imagedb
+    spec:
+      containers:
+      - image: mysql:5.6
+        name: imagedb
+        env:
+          # Use secret in real usage
+        - name: MYSQL_DATABASE
+          value: imageDB
+        - name: MYSQL_ROOT_PASSWORD
+          value: password
+        ports:
+        - containerPort: 3306
+          name: imagedb
+        volumeMounts:
+        - name: imagedb-persistent-storage
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: imagedb-persistent-storage
+        persistentVolumeClaim:
+          claimName: imagedb-pv-claim
