@@ -1,0 +1,59 @@
+{
+    "url": "https://www.kth.se/social/course/HI1024/calendar/",
+    "entries": [
+        {
+            "url": "https://www.kth.se/social/course/HI1024/event/513740/",
+            "start": "2021-12-22 08:00:00",
+            "end": "2021-12-22 13:00:00",
+            "title": "Omtenta",
+            "info": "TEN2",
+            "type": "OVR",
+            "type_name": {
+                "sv": "Omtenta",
+                "en": "Re-exam"
+            },
+            "group": "",
+            "locations": [
+                {
+                    "name": "T3",
+                    "url": "https://www.kth.se/places/room/id/9c8b2f61-9e9e-4088-a981-842899085cdf"
+                },
+                {
+                    "name": "T4",
+                    "url": "https://www.kth.se/places/room/id/c6dd53c3-b6f6-432e-818a-c61de3169364"
+                },
+                {
+                    "name": "T61",
+                    "url": "https://www.kth.se/places/room/id/0965ce9d-78db-49b6-b339-78873567c68c"
+                },
+                {
+                    "name": "T64",
+                    "url": "https://www.kth.se/places/room/id/42f62bf8-550e-4ccb-8af9-229a43069b8e"
+                },
+                {
+                    "name": "T65",
+                    "url": "https://www.kth.se/places/room/id/a33fe565-b3ab-4f88-a043-8a567e305aa8"
+                }
+            ]
+        },
+        {
+            "url": "https://www.kth.se/social/course/HI1024/event/581051-2/",
+            "start": "2021-12-22 08:00:00",
+            "end": "2021-12-22 13:00:00",
+            "title": "Omtenta",
+            "info": null,
+            "type": "OVR",
+            "type_name": {
+                "sv": "Omtenta",
+                "en": "Re-exam"
+            },
+            "group": "",
+            "locations": [
+                {
+                    "name": "T67",
+                    "url": "https://www.kth.se/places/room/id/e56ba3af-acd4-4db0-9837-3352f0007807"
+                }
+            ]
+        }
+    ]
+}

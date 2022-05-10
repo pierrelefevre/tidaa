@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7415C6A627733EC600A50EAC /* wakemeupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6A527733EC600A50EAC /* wakemeupApp.swift */; };
+		7415C6A827733EC600A50EAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6A727733EC600A50EAC /* ContentView.swift */; };
+		7415C6AA27733EC700A50EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7415C6A927733EC700A50EAC /* Assets.xcassets */; };
+		7415C6AD27733EC700A50EAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7415C6AC27733EC700A50EAC /* Preview Assets.xcassets */; };
+		7415C6B727733F1C00A50EAC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6B627733F1C00A50EAC /* Model.swift */; };
+		7415C6B927733F2800A50EAC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6B827733F2800A50EAC /* ViewModel.swift */; };
+		7415C6BB27733FE400A50EAC /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6BA27733FE400A50EAC /* RouteView.swift */; };
+		7415C6BD27733FED00A50EAC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6BC27733FED00A50EAC /* SettingsView.swift */; };
+		7415C6C02773444700A50EAC /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6BF2773444700A50EAC /* APIModel.swift */; };
+		7415C6C2277346D500A50EAC /* resrobot_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 7415C6C1277346D500A50EAC /* resrobot_example.json */; };
+		7415C6C4277346EA00A50EAC /* placeLookup_example in Resources */ = {isa = PBXBuildFile; fileRef = 7415C6C3277346EA00A50EAC /* placeLookup_example */; };
+		7415C6C8277347BE00A50EAC /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 7415C6C7277347BE00A50EAC /* TODO */; };
+		7415C6CC2773496E00A50EAC /* StopLookupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6CB2773496E00A50EAC /* StopLookupResult.swift */; };
+		7415C6CE2773499900A50EAC /* KTHCalendarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6CD2773499900A50EAC /* KTHCalendarResult.swift */; };
+		7415C6D0277365F200A50EAC /* StopLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6CF277365F200A50EAC /* StopLocation.swift */; };
+		7415C6D52773670100A50EAC /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6D42773670100A50EAC /* Trip.swift */; };
+		7415C6D72773675000A50EAC /* LegList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6D62773675000A50EAC /* LegList.swift */; };
+		7415C6D92773676400A50EAC /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6D82773676400A50EAC /* Leg.swift */; };
+		7415C6DB2773679300A50EAC /* LegPartial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6DA2773679300A50EAC /* LegPartial.swift */; };
+		7415C6DF2773765A00A50EAC /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7415C6DE2773765A00A50EAC /* Route.swift */; };
+		741E75682783098D0022D588 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741E75672783098D0022D588 /* LocationManager.swift */; };
+		74255E9C278EC5DA00D566C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74255E9B278EC5DA00D566C0 /* AppDelegate.swift */; };
+		742A6A502787370500FAB007 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742A6A4F2787370500FAB007 /* ListItem.swift */; };
+		74E2DEF1277E115500BA046E /* KTHCalendarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2DEF0277E115500BA046E /* KTHCalendarEntry.swift */; };
+		74E2DEF3277E119800BA046E /* KTHCalendarTypeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2DEF2277E119800BA046E /* KTHCalendarTypeName.swift */; };
+		74E2DEF5277E11D000BA046E /* KTHCalendarLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2DEF4277E11D000BA046E /* KTHCalendarLocation.swift */; };
+		74E2DEF8277E13AF00BA046E /* KTHCalendarQuery.json in Resources */ = {isa = PBXBuildFile; fileRef = 74E2DEF6277E13AF00BA046E /* KTHCalendarQuery.json */; };
+		74E2DEF9277E13AF00BA046E /* KTHCalendarExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 74E2DEF7277E13AF00BA046E /* KTHCalendarExample.json */; };
+		FA8708792782FB5000A03FC1 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8708782782FB5000A03FC1 /* APIHelper.swift */; };
+		FA87087B2782FD7200A03FC1 /* KTHCalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87087A2782FD7200A03FC1 /* KTHCalendarHelper.swift */; };
+		FA87087D2782FD9300A03FC1 /* RouteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87087C2782FD9300A03FC1 /* RouteHelper.swift */; };
+		FA87087F2782FDA400A03FC1 /* PlacesLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA87087E2782FDA400A03FC1 /* PlacesLookup.swift */; };
+		FACF0D942787236800D6D556 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0D932787236800D6D556 /* CourseView.swift */; };
+		FACF0D962787239500D6D556 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0D952787239500D6D556 /* CalendarView.swift */; };
+		FACF0D9C2787256000D6D556 /* SearchedCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0D9B2787256000D6D556 /* SearchedCourse.swift */; };
+		FACF0D9E2787258E00D6D556 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0D9D2787258E00D6D556 /* SearchResult.swift */; };
+		FACF0DA02787267500D6D556 /* CourseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0D9F2787267500D6D556 /* CourseHelper.swift */; };
+		FACF0DA22787353A00D6D556 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF0DA12787353A00D6D556 /* CourseInfo.swift */; };
+		FAF82AA62788422E00B7C876 /* CourseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF82AA52788422E00B7C876 /* CourseEvent.swift */; };
+		FAF82AA8278849B400B7C876 /* CourseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF82AA7278849B400B7C876 /* CourseIdentifier.swift */; };
+		FAF82AAA27889A5800B7C876 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAF82AA927889A5800B7C876 /* alarm.mp3 */; };
+		FAF82AAC278C46F400B7C876 /* FileManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF82AAB278C46F400B7C876 /* FileManagerModel.swift */; };
+		FAF82AAE278C806800B7C876 /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF82AAD278C806800B7C876 /* CalendarItem.swift */; };
+		FAF82AB0278C832500B7C876 /* SaveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF82AAF278C832500B7C876 /* SaveState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7415C6A227733EC600A50EAC /* Wake me up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wake me up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7415C6A527733EC600A50EAC /* wakemeupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakemeupApp.swift; sourceTree = "<group>"; };
+		7415C6A727733EC600A50EAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7415C6A927733EC700A50EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7415C6AC27733EC700A50EAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7415C6B627733F1C00A50EAC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7415C6B827733F2800A50EAC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7415C6BA27733FE400A50EAC /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		7415C6BC27733FED00A50EAC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7415C6BF2773444700A50EAC /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		7415C6C1277346D500A50EAC /* resrobot_example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resrobot_example.json; sourceTree = "<group>"; };
+		7415C6C3277346EA00A50EAC /* placeLookup_example */ = {isa = PBXFileReference; lastKnownFileType = text; path = placeLookup_example; sourceTree = "<group>"; };
+		7415C6C7277347BE00A50EAC /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		7415C6CB2773496E00A50EAC /* StopLookupResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLookupResult.swift; sourceTree = "<group>"; };
+		7415C6CD2773499900A50EAC /* KTHCalendarResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTHCalendarResult.swift; sourceTree = "<group>"; };
+		7415C6CF277365F200A50EAC /* StopLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopLocation.swift; sourceTree = "<group>"; };
+		7415C6D42773670100A50EAC /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		7415C6D62773675000A50EAC /* LegList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegList.swift; sourceTree = "<group>"; };
+		7415C6D82773676400A50EAC /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		7415C6DA2773679300A50EAC /* LegPartial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegPartial.swift; sourceTree = "<group>"; };
+		7415C6DE2773765A00A50EAC /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		741E75672783098D0022D588 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		74255E9B278EC5DA00D566C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		742A6A4F2787370500FAB007 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		747ADAAF278DDBB800A9496D /* Wake-me-up-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Wake-me-up-Info.plist"; sourceTree = "<group>"; };
+		74E2DEF0277E115500BA046E /* KTHCalendarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTHCalendarEntry.swift; sourceTree = "<group>"; };
+		74E2DEF2277E119800BA046E /* KTHCalendarTypeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTHCalendarTypeName.swift; sourceTree = "<group>"; };
+		74E2DEF4277E11D000BA046E /* KTHCalendarLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTHCalendarLocation.swift; sourceTree = "<group>"; };
+		74E2DEF6277E13AF00BA046E /* KTHCalendarQuery.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KTHCalendarQuery.json; sourceTree = "<group>"; };
+		74E2DEF7277E13AF00BA046E /* KTHCalendarExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KTHCalendarExample.json; sourceTree = "<group>"; };
+		FA8708782782FB5000A03FC1 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		FA87087A2782FD7200A03FC1 /* KTHCalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTHCalendarHelper.swift; sourceTree = "<group>"; };
+		FA87087C2782FD9300A03FC1 /* RouteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteHelper.swift; sourceTree = "<group>"; };
+		FA87087E2782FDA400A03FC1 /* PlacesLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesLookup.swift; sourceTree = "<group>"; };
+		FACF0D932787236800D6D556 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		FACF0D952787239500D6D556 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FACF0D97278724AA00D6D556 /* SearchCourseExample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchCourseExample.json; sourceTree = "<group>"; };
+		FACF0D9B2787256000D6D556 /* SearchedCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedCourse.swift; sourceTree = "<group>"; };
+		FACF0D9D2787258E00D6D556 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		FACF0D9F2787267500D6D556 /* CourseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseHelper.swift; sourceTree = "<group>"; };
+		FACF0DA12787353A00D6D556 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
+		FAF82AA52788422E00B7C876 /* CourseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseEvent.swift; sourceTree = "<group>"; };
+		FAF82AA7278849B400B7C876 /* CourseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseIdentifier.swift; sourceTree = "<group>"; };
+		FAF82AA927889A5800B7C876 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		FAF82AAB278C46F400B7C876 /* FileManagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerModel.swift; sourceTree = "<group>"; };
+		FAF82AAD278C806800B7C876 /* CalendarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
+		FAF82AAF278C832500B7C876 /* SaveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7415C69F27733EC600A50EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7415C69927733EC600A50EAC = {
+			isa = PBXGroup;
+			children = (
+				747ADAAF278DDBB800A9496D /* Wake-me-up-Info.plist */,
+				7415C6A427733EC600A50EAC /* wakemeup */,
+				7415C6A327733EC600A50EAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7415C6A327733EC600A50EAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7415C6A227733EC600A50EAC /* Wake me up.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7415C6A427733EC600A50EAC /* wakemeup */ = {
+			isa = PBXGroup;
+			children = (
+				74255E9B278EC5DA00D566C0 /* AppDelegate.swift */,
+				FAF82AA927889A5800B7C876 /* alarm.mp3 */,
+				7415C6BE2773443600A50EAC /* API */,
+				7415C6B427733F0000A50EAC /* View */,
+				7415C6B327733EF900A50EAC /* Model */,
+				7415C6A527733EC600A50EAC /* wakemeupApp.swift */,
+				7415C6A927733EC700A50EAC /* Assets.xcassets */,
+				7415C6AB27733EC700A50EAC /* Preview Content */,
+				7415C6C7277347BE00A50EAC /* TODO */,
+			);
+			path = wakemeup;
+			sourceTree = "<group>";
+		};
+		7415C6AB27733EC700A50EAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7415C6AC27733EC700A50EAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7415C6B327733EF900A50EAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF82AAB278C46F400B7C876 /* FileManagerModel.swift */,
+				741E75672783098D0022D588 /* LocationManager.swift */,
+				7415C6B627733F1C00A50EAC /* Model.swift */,
+				7415C6B827733F2800A50EAC /* ViewModel.swift */,
+				FAF82AA52788422E00B7C876 /* CourseEvent.swift */,
+				FAF82AA7278849B400B7C876 /* CourseIdentifier.swift */,
+				FAF82AAF278C832500B7C876 /* SaveState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7415C6B427733F0000A50EAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7415C6A727733EC600A50EAC /* ContentView.swift */,
+				7415C6BA27733FE400A50EAC /* RouteView.swift */,
+				7415C6BC27733FED00A50EAC /* SettingsView.swift */,
+				FACF0D932787236800D6D556 /* CourseView.swift */,
+				FACF0D952787239500D6D556 /* CalendarView.swift */,
+				FAF82AAD278C806800B7C876 /* CalendarItem.swift */,
+				742A6A4F2787370500FAB007 /* ListItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7415C6BE2773443600A50EAC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7415C6D3277366DC00A50EAC /* KTHCalendar */,
+				7415C6D2277366CB00A50EAC /* Routeplanner */,
+				7415C6D1277366BE00A50EAC /* StopLookup */,
+				7415C6BF2773444700A50EAC /* APIModel.swift */,
+				FA8708782782FB5000A03FC1 /* APIHelper.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7415C6D1277366BE00A50EAC /* StopLookup */ = {
+			isa = PBXGroup;
+			children = (
+				7415C6C3277346EA00A50EAC /* placeLookup_example */,
+				7415C6CB2773496E00A50EAC /* StopLookupResult.swift */,
+				7415C6CF277365F200A50EAC /* StopLocation.swift */,
+				FA87087E2782FDA400A03FC1 /* PlacesLookup.swift */,
+			);
+			path = StopLookup;
+			sourceTree = "<group>";
+		};
+		7415C6D2277366CB00A50EAC /* Routeplanner */ = {
+			isa = PBXGroup;
+			children = (
+				7415C6C1277346D500A50EAC /* resrobot_example.json */,
+				7415C6D42773670100A50EAC /* Trip.swift */,
+				7415C6D62773675000A50EAC /* LegList.swift */,
+				7415C6D82773676400A50EAC /* Leg.swift */,
+				7415C6DA2773679300A50EAC /* LegPartial.swift */,
+				7415C6DE2773765A00A50EAC /* Route.swift */,
+				FA87087C2782FD9300A03FC1 /* RouteHelper.swift */,
+			);
+			path = Routeplanner;
+			sourceTree = "<group>";
+		};
+		7415C6D3277366DC00A50EAC /* KTHCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				FACF0D98278724CF00D6D556 /* CourseSearch */,
+				74E2DEF7277E13AF00BA046E /* KTHCalendarExample.json */,
+				74E2DEF6277E13AF00BA046E /* KTHCalendarQuery.json */,
+				7415C6CD2773499900A50EAC /* KTHCalendarResult.swift */,
+				74E2DEF0277E115500BA046E /* KTHCalendarEntry.swift */,
+				74E2DEF2277E119800BA046E /* KTHCalendarTypeName.swift */,
+				74E2DEF4277E11D000BA046E /* KTHCalendarLocation.swift */,
+				FA87087A2782FD7200A03FC1 /* KTHCalendarHelper.swift */,
+			);
+			path = KTHCalendar;
+			sourceTree = "<group>";
+		};
+		FACF0D98278724CF00D6D556 /* CourseSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FACF0D97278724AA00D6D556 /* SearchCourseExample.json */,
+				FACF0D9B2787256000D6D556 /* SearchedCourse.swift */,
+				FACF0D9D2787258E00D6D556 /* SearchResult.swift */,
+				FACF0D9F2787267500D6D556 /* CourseHelper.swift */,
+				FACF0DA12787353A00D6D556 /* CourseInfo.swift */,
+			);
+			path = CourseSearch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7415C6A127733EC600A50EAC /* Wake me up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7415C6B027733EC700A50EAC /* Build configuration list for PBXNativeTarget "Wake me up" */;
+			buildPhases = (
+				7415C69E27733EC600A50EAC /* Sources */,
+				7415C69F27733EC600A50EAC /* Frameworks */,
+				7415C6A027733EC600A50EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wake me up";
+			productName = wakemeup;
+			productReference = 7415C6A227733EC600A50EAC /* Wake me up.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7415C69A27733EC600A50EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7415C6A127733EC600A50EAC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 7415C69D27733EC600A50EAC /* Build configuration list for PBXProject "Wake me up" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7415C69927733EC600A50EAC;
+			productRefGroup = 7415C6A327733EC600A50EAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7415C6A127733EC600A50EAC /* Wake me up */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7415C6A027733EC600A50EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7415C6C8277347BE00A50EAC /* TODO in Resources */,
+				74E2DEF9277E13AF00BA046E /* KTHCalendarExample.json in Resources */,
+				FAF82AAA27889A5800B7C876 /* alarm.mp3 in Resources */,
+				7415C6AD27733EC700A50EAC /* Preview Assets.xcassets in Resources */,
+				7415C6C4277346EA00A50EAC /* placeLookup_example in Resources */,
+				74E2DEF8277E13AF00BA046E /* KTHCalendarQuery.json in Resources */,
+				7415C6AA27733EC700A50EAC /* Assets.xcassets in Resources */,
+				7415C6C2277346D500A50EAC /* resrobot_example.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7415C69E27733EC600A50EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E2DEF5277E11D000BA046E /* KTHCalendarLocation.swift in Sources */,
+				7415C6D52773670100A50EAC /* Trip.swift in Sources */,
+				7415C6C02773444700A50EAC /* APIModel.swift in Sources */,
+				FA87087B2782FD7200A03FC1 /* KTHCalendarHelper.swift in Sources */,
+				7415C6B727733F1C00A50EAC /* Model.swift in Sources */,
+				FAF82AA8278849B400B7C876 /* CourseIdentifier.swift in Sources */,
+				FACF0D962787239500D6D556 /* CalendarView.swift in Sources */,
+				FA87087F2782FDA400A03FC1 /* PlacesLookup.swift in Sources */,
+				7415C6A827733EC600A50EAC /* ContentView.swift in Sources */,
+				FAF82AAC278C46F400B7C876 /* FileManagerModel.swift in Sources */,
+				FA8708792782FB5000A03FC1 /* APIHelper.swift in Sources */,
+				74E2DEF1277E115500BA046E /* KTHCalendarEntry.swift in Sources */,
+				742A6A502787370500FAB007 /* ListItem.swift in Sources */,
+				74E2DEF3277E119800BA046E /* KTHCalendarTypeName.swift in Sources */,
+				FAF82AAE278C806800B7C876 /* CalendarItem.swift in Sources */,
+				7415C6D0277365F200A50EAC /* StopLocation.swift in Sources */,
+				7415C6DF2773765A00A50EAC /* Route.swift in Sources */,
+				7415C6B927733F2800A50EAC /* ViewModel.swift in Sources */,
+				7415C6BD27733FED00A50EAC /* SettingsView.swift in Sources */,
+				FACF0DA02787267500D6D556 /* CourseHelper.swift in Sources */,
+				7415C6CE2773499900A50EAC /* KTHCalendarResult.swift in Sources */,
+				FAF82AA62788422E00B7C876 /* CourseEvent.swift in Sources */,
+				7415C6D72773675000A50EAC /* LegList.swift in Sources */,
+				FACF0DA22787353A00D6D556 /* CourseInfo.swift in Sources */,
+				FA87087D2782FD9300A03FC1 /* RouteHelper.swift in Sources */,
+				7415C6BB27733FE400A50EAC /* RouteView.swift in Sources */,
+				FAF82AB0278C832500B7C876 /* SaveState.swift in Sources */,
+				FACF0D9C2787256000D6D556 /* SearchedCourse.swift in Sources */,
+				7415C6A627733EC600A50EAC /* wakemeupApp.swift in Sources */,
+				FACF0D9E2787258E00D6D556 /* SearchResult.swift in Sources */,
+				7415C6D92773676400A50EAC /* Leg.swift in Sources */,
+				7415C6CC2773496E00A50EAC /* StopLookupResult.swift in Sources */,
+				741E75682783098D0022D588 /* LocationManager.swift in Sources */,
+				7415C6DB2773679300A50EAC /* LegPartial.swift in Sources */,
+				FACF0D942787236800D6D556 /* CourseView.swift in Sources */,
+				74255E9C278EC5DA00D566C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7415C6AE27733EC700A50EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7415C6AF27733EC700A50EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7415C6B127733EC700A50EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wakemeup/Preview Content\"";
+				DEVELOPMENT_TEAM = JMFP3RKH34;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wake-me-up-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Find departure location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Find departure location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kth.wakemeup;
+				PRODUCT_NAME = "Wake me up";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7415C6B227733EC700A50EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wakemeup/Preview Content\"";
+				DEVELOPMENT_TEAM = JMFP3RKH34;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wake-me-up-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Find departure location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Find departure location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kth.wakemeup;
+				PRODUCT_NAME = "Wake me up";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7415C69D27733EC600A50EAC /* Build configuration list for PBXProject "Wake me up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7415C6AE27733EC700A50EAC /* Debug */,
+				7415C6AF27733EC700A50EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7415C6B027733EC700A50EAC /* Build configuration list for PBXNativeTarget "Wake me up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7415C6B127733EC700A50EAC /* Debug */,
+				7415C6B227733EC700A50EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7415C69A27733EC600A50EAC /* Project object */;
+}

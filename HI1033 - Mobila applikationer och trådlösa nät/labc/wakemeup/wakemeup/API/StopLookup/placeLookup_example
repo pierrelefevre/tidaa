@@ -1,0 +1,95 @@
+https://api.resrobot.se/v2/location.name?input=Masmo&format=json&key={{API_KEY}}
+{
+    "StopLocation": [
+        {
+            "id": "740050662",
+            "extId": "740050662",
+            "name": "Östermalm (Lindesberg kn)",
+            "lon": 15.23677,
+            "lat": 59.600298,
+            "weight": 95,
+            "products": 128
+        },
+        {
+            "id": "740037058",
+            "extId": "740037058",
+            "name": "Östermalm (Uppvidinge kn)",
+            "lon": 15.673556,
+            "lat": 56.971267,
+            "weight": 95,
+            "products": 128
+        },
+        {
+            "id": "740021651",
+            "extId": "740021651",
+            "name": "Östermalmstorg T-bana (Stockholm kn)",
+            "lon": 18.07408,
+            "lat": 59.334972,
+            "weight": 21039,
+            "products": 32
+        },
+        {
+            "id": "740046172",
+            "extId": "740046172",
+            "name": "Östermalms idrottsplats (Stockholm kn)",
+            "lon": 18.082116,
+            "lat": 59.347305,
+            "weight": 442,
+            "products": 128
+        },
+        {
+            "id": "740038435",
+            "extId": "740038435",
+            "name": "Östermalmsvägen (Trosa kn)",
+            "lon": 17.553551,
+            "lat": 58.894177,
+            "weight": 442,
+            "products": 128
+        },
+        {
+            "id": "740022060",
+            "extId": "740022060",
+            "name": "Eskilstuna Östermalm",
+            "lon": 16.537815,
+            "lat": 59.372205,
+            "weight": 442,
+            "products": 128
+        },
+        {
+            "id": "740007219",
+            "extId": "740007219",
+            "name": "Söderfors Östermalm (Tierp kn)",
+            "lon": 17.254947,
+            "lat": 60.380435,
+            "weight": 18,
+            "products": 128
+        },
+        {
+            "id": "740045464",
+            "extId": "740045464",
+            "name": "Stockholm Östermalmstorg",
+            "lon": 18.080058,
+            "lat": 59.336338,
+            "weight": 442,
+            "products": 128
+        },
+        {
+            "id": "740026257",
+            "extId": "740026257",
+            "name": "Umeå Östermalmsgatan",
+            "lon": 20.288717,
+            "lat": 63.819214,
+            "weight": 442,
+            "products": 128
+        },
+        {
+            "id": "740032381",
+            "extId": "740032381",
+            "name": "Östermarksvägen (Ronneby kn)",
+            "lon": 15.412689,
+            "lat": 56.21914,
+            "weight": 95,
+            "products": 128
+        }
+    ]
+}

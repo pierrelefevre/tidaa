@@ -1,0 +1,144 @@
+{
+  "searchHits": [
+    {
+      "course": {
+        "courseCode": "HI1030",
+        "title": "Databasteknik",
+        "credits": 7,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI103V",
+        "title": "Datakommunikation I",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI103L",
+        "title": "Datakommunikation och nätverk",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1031",
+        "title": "Distribuerade informationssystem",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI103X",
+        "title": "Examensarbete inom datornätverk och kommunikation, grundnivå",
+        "credits": 15,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI103U",
+        "title": "IP Networks and Services B /Commissioned Course/",
+        "credits": 5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1037",
+        "title": "Internets domännamnsystem",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1032",
+        "title": "Kommunikationssystem",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1036",
+        "title": "Mjukvarukonstruktion, projektkurs",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1035",
+        "title": "Mobil kommunikation och trådlösa nät",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1033",
+        "title": "Mobila applikationer och trådlösa nät",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1038",
+        "title": "Projektkurs inom data- och nätverksteknik",
+        "credits": 9,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1039",
+        "title": "Projektkurs inom programvaruutveckling",
+        "credits": 9,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    },
+    {
+      "course": {
+        "courseCode": "HI1034",
+        "title": "Serverutveckling",
+        "credits": 7.5,
+        "creditUnitLabel": "Högskolepoäng",
+        "creditUnitAbbr": "hp",
+        "educationalLevel": "BASIC"
+      }
+    }
+  ]
+}

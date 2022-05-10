@@ -1,0 +1,612 @@
+{
+    "Trip": [
+        {
+            "ServiceDays": [
+                {
+                    "planningPeriodBegin": "2021-12-18",
+                    "planningPeriodEnd": "2022-06-11",
+                    "sDaysR": "Mo - Fr",
+                    "sDaysI": "not 24. Dec 2021 until 7. Jan 2022, 15., 18. Apr, 26. May, 6. Jun",
+                    "sDaysB": "3C0001F3E7CF9F3E7CF9F3E7CF9F3C3CF9F3E7CE9F1E"
+                }
+            ],
+            "LegList": {
+                "Leg": [
+                    {
+                        "Origin": {
+                            "name": "Masmo T-bana (Huddinge kn)",
+                            "type": "ST",
+                            "id": "740021729",
+                            "extId": "740021729",
+                            "lon": 17.880336,
+                            "lat": 59.249682,
+                            "routeIdx": 2,
+                            "time": "16:51:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 19,
+                            "time": "17:25:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 13",
+                            "num": "13",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "0",
+                        "name": "Länstrafik -Tunnelbana 13",
+                        "transportNumber": "13",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Ropsten T-bana (Stockholm kn)"
+                    },
+                    {
+                        "Origin": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 12,
+                            "time": "17:33:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Tekniska Högskolan T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740011606",
+                            "extId": "740011606",
+                            "lon": 18.071716,
+                            "lat": 59.345822,
+                            "routeIdx": 14,
+                            "time": "17:36:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 14",
+                            "num": "14",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "1",
+                        "name": "Länstrafik -Tunnelbana 14",
+                        "transportNumber": "14",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Mörby centrum T-bana (Danderyd kn)"
+                    }
+                ]
+            },
+            "idx": 0,
+            "tripId": "C-0",
+            "ctxRecon": "T$A=1@O=Masmo T-bana (Huddinge kn)@L=740021729@a=128@$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$202112221651$202112221725$ULT   13$$1$§T$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$A=1@O=Tekniska Högskolan T-bana (Stockholm kn)@L=740011606@a=128@$202112221733$202112221736$ULT   14$$1$",
+            "duration": "PT45M"
+        },
+        {
+            "ServiceDays": [
+                {
+                    "planningPeriodBegin": "2021-12-18",
+                    "planningPeriodEnd": "2022-06-11",
+                    "sDaysR": "Mo - Fr",
+                    "sDaysI": "not 24., 31. Dec, 6. Jan, 15., 18. Apr, 26. May, 6. Jun",
+                    "sDaysB": "3C78E9F3E7CF9F3E7CF9F3E7CF9F3C3CF9F3E7CE9F1E"
+                }
+            ],
+            "LegList": {
+                "Leg": [
+                    {
+                        "Origin": {
+                            "name": "Masmo T-bana (Huddinge kn)",
+                            "type": "ST",
+                            "id": "740021729",
+                            "extId": "740021729",
+                            "lon": 17.880336,
+                            "lat": 59.249682,
+                            "routeIdx": 4,
+                            "time": "16:56:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 21,
+                            "time": "17:30:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 13",
+                            "num": "13",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "0",
+                        "name": "Länstrafik -Tunnelbana 13",
+                        "transportNumber": "13",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Ropsten T-bana (Stockholm kn)"
+                    },
+                    {
+                        "Origin": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 12,
+                            "time": "17:38:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Tekniska Högskolan T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740011606",
+                            "extId": "740011606",
+                            "lon": 18.071716,
+                            "lat": 59.345822,
+                            "routeIdx": 14,
+                            "time": "17:41:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 14",
+                            "num": "14",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "1",
+                        "name": "Länstrafik -Tunnelbana 14",
+                        "transportNumber": "14",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Mörby centrum T-bana (Danderyd kn)"
+                    }
+                ]
+            },
+            "idx": 1,
+            "tripId": "C-1",
+            "ctxRecon": "T$A=1@O=Masmo T-bana (Huddinge kn)@L=740021729@a=128@$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$202112221656$202112221730$ULT   13$$1$§T$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$A=1@O=Tekniska Högskolan T-bana (Stockholm kn)@L=740011606@a=128@$202112221738$202112221741$ULT   14$$1$",
+            "duration": "PT45M"
+        },
+        {
+            "ServiceDays": [
+                {
+                    "planningPeriodBegin": "2021-12-18",
+                    "planningPeriodEnd": "2022-06-11",
+                    "sDaysR": "Mo - Fr",
+                    "sDaysI": "not 24. Dec 2021 until 7. Jan 2022, 15., 18. Apr, 26. May, 6. Jun",
+                    "sDaysB": "3C0001F3E7CF9F3E7CF9F3E7CF9F3C3CF9F3E7CE9F1E"
+                }
+            ],
+            "LegList": {
+                "Leg": [
+                    {
+                        "Origin": {
+                            "name": "Masmo T-bana (Huddinge kn)",
+                            "type": "ST",
+                            "id": "740021729",
+                            "extId": "740021729",
+                            "lon": 17.880336,
+                            "lat": 59.249682,
+                            "routeIdx": 2,
+                            "time": "17:01:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 19,
+                            "time": "17:35:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 13",
+                            "num": "13",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "0",
+                        "name": "Länstrafik -Tunnelbana 13",
+                        "transportNumber": "13",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Ropsten T-bana (Stockholm kn)"
+                    },
+                    {
+                        "Origin": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 12,
+                            "time": "17:43:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Tekniska Högskolan T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740011606",
+                            "extId": "740011606",
+                            "lon": 18.071716,
+                            "lat": 59.345822,
+                            "routeIdx": 14,
+                            "time": "17:46:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 14",
+                            "num": "14",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "1",
+                        "name": "Länstrafik -Tunnelbana 14",
+                        "transportNumber": "14",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Mörby centrum T-bana (Danderyd kn)"
+                    }
+                ]
+            },
+            "idx": 2,
+            "tripId": "C-2",
+            "ctxRecon": "T$A=1@O=Masmo T-bana (Huddinge kn)@L=740021729@a=128@$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$202112221701$202112221735$ULT   13$$1$§T$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$A=1@O=Tekniska Högskolan T-bana (Stockholm kn)@L=740011606@a=128@$202112221743$202112221746$ULT   14$$1$",
+            "duration": "PT45M"
+        },
+        {
+            "ServiceDays": [
+                {
+                    "planningPeriodBegin": "2021-12-18",
+                    "planningPeriodEnd": "2022-06-11",
+                    "sDaysR": "Mo - Fr",
+                    "sDaysI": "not 24., 31. Dec, 6. Jan, 15., 18. Apr, 26. May, 6. Jun",
+                    "sDaysB": "3C78E9F3E7CF9F3E7CF9F3E7CF9F3C3CF9F3E7CE9F1E"
+                }
+            ],
+            "LegList": {
+                "Leg": [
+                    {
+                        "Origin": {
+                            "name": "Masmo T-bana (Huddinge kn)",
+                            "type": "ST",
+                            "id": "740021729",
+                            "extId": "740021729",
+                            "lon": 17.880336,
+                            "lat": 59.249682,
+                            "routeIdx": 4,
+                            "time": "17:06:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 21,
+                            "time": "17:40:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 13",
+                            "num": "13",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "0",
+                        "name": "Länstrafik -Tunnelbana 13",
+                        "transportNumber": "13",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Ropsten T-bana (Stockholm kn)"
+                    },
+                    {
+                        "Origin": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 12,
+                            "time": "17:48:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Tekniska Högskolan T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740011606",
+                            "extId": "740011606",
+                            "lon": 18.071716,
+                            "lat": 59.345822,
+                            "routeIdx": 14,
+                            "time": "17:51:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 14",
+                            "num": "14",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "1",
+                        "name": "Länstrafik -Tunnelbana 14",
+                        "transportNumber": "14",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Mörby centrum T-bana (Danderyd kn)"
+                    }
+                ]
+            },
+            "idx": 3,
+            "tripId": "C-3",
+            "ctxRecon": "T$A=1@O=Masmo T-bana (Huddinge kn)@L=740021729@a=128@$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$202112221706$202112221740$ULT   13$$1$§T$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$A=1@O=Tekniska Högskolan T-bana (Stockholm kn)@L=740011606@a=128@$202112221748$202112221751$ULT   14$$1$",
+            "duration": "PT45M"
+        },
+        {
+            "ServiceDays": [
+                {
+                    "planningPeriodBegin": "2021-12-18",
+                    "planningPeriodEnd": "2022-06-11",
+                    "sDaysR": "Mo - Fr",
+                    "sDaysI": "not 24. Dec 2021 until 7. Jan 2022, 15., 18. Apr, 26. May, 6. Jun",
+                    "sDaysB": "3C0001F3E7CF9F3E7CF9F3E7CF9F3C3CF9F3E7CE9F1E"
+                }
+            ],
+            "LegList": {
+                "Leg": [
+                    {
+                        "Origin": {
+                            "name": "Masmo T-bana (Huddinge kn)",
+                            "type": "ST",
+                            "id": "740021729",
+                            "extId": "740021729",
+                            "lon": 17.880336,
+                            "lat": 59.249682,
+                            "routeIdx": 2,
+                            "time": "17:11:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 19,
+                            "time": "17:45:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 13",
+                            "num": "13",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "0",
+                        "name": "Länstrafik -Tunnelbana 13",
+                        "transportNumber": "13",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Ropsten T-bana (Stockholm kn)"
+                    },
+                    {
+                        "Origin": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 12,
+                            "time": "17:53:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Tekniska Högskolan T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740011606",
+                            "extId": "740011606",
+                            "lon": 18.071716,
+                            "lat": 59.345822,
+                            "routeIdx": 14,
+                            "time": "17:56:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 14",
+                            "num": "14",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "1",
+                        "name": "Länstrafik -Tunnelbana 14",
+                        "transportNumber": "14",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Mörby centrum T-bana (Danderyd kn)"
+                    }
+                ]
+            },
+            "idx": 4,
+            "tripId": "C-4",
+            "ctxRecon": "T$A=1@O=Masmo T-bana (Huddinge kn)@L=740021729@a=128@$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$202112221711$202112221745$ULT   13$$1$§T$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$A=1@O=Tekniska Högskolan T-bana (Stockholm kn)@L=740011606@a=128@$202112221753$202112221756$ULT   14$$1$",
+            "duration": "PT45M"
+        },
+        {
+            "ServiceDays": [
+                {
+                    "planningPeriodBegin": "2021-12-18",
+                    "planningPeriodEnd": "2022-06-11",
+                    "sDaysR": "Mo - Fr",
+                    "sDaysI": "not 24., 31. Dec, 6. Jan, 15., 18. Apr, 26. May, 6. Jun",
+                    "sDaysB": "3C78E9F3E7CF9F3E7CF9F3E7CF9F3C3CF9F3E7CE9F1E"
+                }
+            ],
+            "LegList": {
+                "Leg": [
+                    {
+                        "Origin": {
+                            "name": "Masmo T-bana (Huddinge kn)",
+                            "type": "ST",
+                            "id": "740021729",
+                            "extId": "740021729",
+                            "lon": 17.880336,
+                            "lat": 59.249682,
+                            "routeIdx": 4,
+                            "time": "17:16:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 21,
+                            "time": "17:50:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 13",
+                            "num": "13",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "0",
+                        "name": "Länstrafik -Tunnelbana 13",
+                        "transportNumber": "13",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Ropsten T-bana (Stockholm kn)"
+                    },
+                    {
+                        "Origin": {
+                            "name": "Östermalmstorg T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740021651",
+                            "extId": "740021651",
+                            "lon": 18.07408,
+                            "lat": 59.334972,
+                            "routeIdx": 12,
+                            "time": "17:58:00",
+                            "date": "2021-12-22"
+                        },
+                        "Destination": {
+                            "name": "Tekniska Högskolan T-bana (Stockholm kn)",
+                            "type": "ST",
+                            "id": "740011606",
+                            "extId": "740011606",
+                            "lon": 18.071716,
+                            "lat": 59.345822,
+                            "routeIdx": 14,
+                            "time": "18:01:00",
+                            "date": "2021-12-22"
+                        },
+                        "Product": {
+                            "name": "Länstrafik -Tunnelbana 14",
+                            "num": "14",
+                            "catCode": "5",
+                            "catOutS": "ULT",
+                            "catOutL": "Länstrafik -Tunnelbana",
+                            "operatorCode": "275",
+                            "operator": "SL",
+                            "operatorUrl": "http://www.sl.se"
+                        },
+                        "idx": "1",
+                        "name": "Länstrafik -Tunnelbana 14",
+                        "transportNumber": "14",
+                        "transportCategory": "ULT",
+                        "type": "JNY",
+                        "reachable": true,
+                        "direction": "Mörby centrum T-bana (Danderyd kn)"
+                    }
+                ]
+            },
+            "idx": 5,
+            "tripId": "C-5",
+            "ctxRecon": "T$A=1@O=Masmo T-bana (Huddinge kn)@L=740021729@a=128@$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$202112221716$202112221750$ULT   13$$1$§T$A=1@O=Östermalmstorg T-bana (Stockholm kn)@L=740021651@a=128@$A=1@O=Tekniska Högskolan T-bana (Stockholm kn)@L=740011606@a=128@$202112221758$202112221801$ULT   14$$1$",
+            "duration": "PT45M"
+        }
+    ],
+    "scrB": "1|OB|MTµ11µ9651µ9651µ9696µ9696µ0µ0µ365µ9650µ1µ-2147483406µ0µ1µ2|PDHµ9ae7fd0dacd34565655a6bf24594f55b|RDµ22122021|RTµ165000",
+    "scrF": "1|OF|MTµ11µ9676µ9676µ9721µ9721µ0µ0µ365µ9672µ6µ-2147483406µ0µ1µ2|PDHµ9ae7fd0dacd34565655a6bf24594f55b|RDµ22122021|RTµ165000"
+}
